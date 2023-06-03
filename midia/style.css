@@ -5,6 +5,11 @@ body{
     margin: 0px;
     background-color: #0E1218;
     color: white;
+    text-align: center;
+}
+
+:root{
+    --paddign: 10px 10px 10px 10px;
 }
 
 header{
@@ -24,32 +29,37 @@ p{
     line-height: 2em;
 }
 
-nav{
-    margin: 10px;
+#martelo{
+    max-width: 100px;
+    margin: 30px;
 }
 
 a{
-    padding: 0px 10px 0px 5px;
+    padding: 0px 10px 0px 10px;
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.25s;
 }
 
+nav img{
+    width: 17px;
+}
+
 #github:hover{
     border-radius: 10px;
     background-color: darkslategray;
-    padding: 10px 10px 10px 5px;
+    padding: var(--paddign);
 }
 
 #instagram:hover{
     border-radius: 10px;
     background-image: linear-gradient(to bottom, #f80053, #f87000);
-    padding: 10px 10px 10px 5px;
+    padding: var(--paddign);
 }
 
 #twitter:hover{
     border-radius: 10px;
     background-color: lightseagreen;
-    padding: 10px 10px 10px 5px;
+    padding: var(--paddign);
 }
